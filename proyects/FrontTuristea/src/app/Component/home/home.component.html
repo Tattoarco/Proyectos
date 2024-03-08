@@ -1,5 +1,6 @@
 <!--Barra de búsqueda -->
 <app-navbar></app-navbar>
+<!-- .... -->
 <div class="absolute top-0 w-full">
   <div class="w-full">
     <div class="bg-black/25 w-full h-[100vh] absolute"></div>
@@ -13,31 +14,62 @@
       Somos tu mejor aliado en los viales, no lo olvides
     </p>
   </div>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="mt-[-17.5rem] z-10 absolute">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1440 320"
+    class="z-10 absolute mt-[-17.5rem]"
+  >
     <path
-      fill="#FFFF"
+      fill="#FFF"
       fill-opacity="1"
       d="M0,160L48,149.3C96,139,192,117,288,138.7C384,160,480,224,576,250.7C672,277,768,267,864,229.3C960,192,1056,128,1152,112C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
     ></path>
   </svg>
-  <h2 class="font-semibold text-3xl">Conoce más...</h2>
-  <div class="p-7 w-full gap-7 grid grid-cols-3">
-    <div class="shadow-xl rounded-2xl">
-      <img src="/assets/img/hotel.jpg" alt="Hotel" class="h-[40vh] w-[40vw] rounded-2xl cursor-pointer hover:scale-110 transition-all in-ease-out" />
+
+  <h2 class="font-medium text-3xl flex justify-center font-mono">Conoce más</h2>
+  <div
+    class="p-7 w-full gap-7 grid grid-cols-3 max-md:grid-cols-2 max-sm:place-items-center"
+  >
+    <div>
+      <img
+        src="/assets/img/hotel.jpg"
+        alt="Hotel"
+        class="h-[40vh] w-[40vw] rounded-2xl cursor-pointer shadow-xl hover:scale-110 transition-all in-ease-out"
+      />
     </div>
-    <div class="shadow-xl rounded-2xl">
+    <div>
       <img
         src="/assets/img/comida.jpg"
         alt="Comida"
-        class="h-[40vh] w-[40vw] rounded-2xl cursor-pointer hover:scale-110 transition-all in-ease-out"
+        class="h-[40vh] w-[40vw] rounded-2xl cursor-pointer hover:scale-110 transition-all in-ease-out shadow-xl"
       />
     </div>
-    <div class="shadow-xl rounded-2xl">
+    <div>
       <img
         src="/assets/img/naturaleza.jpg"
         alt="Naturaleza"
-        class="h-[40vh] w-[40vw] rounded-2xl cursor-pointer hover:scale-110 transition-all in-ease-out"
+        class="h-[40vh] w-[40vw] rounded-2xl cursor-pointer hover:scale-110 transition-all in-ease-out shadow-xl"
       />
     </div>
   </div>
+
+  <div class="flex justify-end items-center p-5">
+    <!-- <h2>Nuestros aliados</h2> -->
+    <i class="fa-solid fa-circle-arrow-left text-2xl"></i>
+    <div class="bg-slate-200 w-[50%] flex items-center p-4 rounded-2xl m-6">
+      <p>
+        Avianca S.A. es la aerolínea más grande de Colombia. Es propiedad del
+        holding británico​ Avianca Group​. Ha sido la aerolínea de bandera de
+        Colombia​​ desde el 5 de diciembre de 1919, cuando se registró
+        inicialmente con el nombre de SCADTA.​​
+      </p>
+      <img
+        src="/assets/img/avianca.png"
+        alt="VivaAir"
+        class="h-[30vh] rounded-2xl"
+      />
+    </div>
+    <i class="fa-solid fa-circle-arrow-right text-2xl"></i>
+  </div>
+ 
 </div>

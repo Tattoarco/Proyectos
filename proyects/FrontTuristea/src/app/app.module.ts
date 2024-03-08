@@ -7,6 +7,8 @@ import { HomeComponent } from './Component/home/home.component';
 import { NavbarComponent } from './Component/navbar/navbar.component';
 import { LoginComponent } from './Component/login/login.component';
 import { RegisterComponent } from './Component/register/register.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { RegisterComponent } from './Component/register/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

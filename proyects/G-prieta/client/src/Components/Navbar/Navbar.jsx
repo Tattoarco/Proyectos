@@ -5,36 +5,35 @@ import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, Input } from "@
 export const Nav = () => {
   return (
     <main>
-      <Navbar className="bg-transparent fixed">
+      <Navbar shouldHideOnScroll className="shadow-md">
         <NavbarBrand>
-          <img src="./logo.png" alt="Logo" className="w-[5rem]" />
-          <p>G.PRIETA</p>
+          <img src="./logo.png" alt="Logo" className="w-[5rem] pt-5 rounded-full" />
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
-          <NavbarItem>
+          <NavbarItem className="hover:border-b-medium hover:border-[#9E6200]">
             <Link color="foreground" to="/">
               Inicio
             </Link>
           </NavbarItem>
-          <NavbarItem>
+          <NavbarItem className="hover:border-b-medium hover:border-[#9E6200]">
             <Link color="foreground" href="#">
               Mujer
             </Link>
           </NavbarItem>
-          <NavbarItem>
+          <NavbarItem className="hover:border-b-medium hover:border-[#9E6200]">
             <Link color="foreground" href="#">
               Hombre
             </Link>
           </NavbarItem>
-          <NavbarItem>
+          <NavbarItem className="hover:border-b-medium hover:border-[#9E6200]">
             <Link color="foreground" href="#">
               Accsesorios
             </Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
-          <NavbarItem className="gap-2 text-[#9E6200] cursor-pointer">
-            <i className="fi fi-br-search" />
+          <NavbarItem className="gap-2 text-[#9E6200] cursor-pointer flex hover:border-b-2 hover:border-[#9E6200] hover:scale-110">
+            <i className="fi fi-br-search"/>
             Buscar
           </NavbarItem>
           <NavbarItem>

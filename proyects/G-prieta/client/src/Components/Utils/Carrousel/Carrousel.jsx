@@ -5,7 +5,7 @@ export const Carrousel = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
 
-  const images = ["./1.png", "./home.png", "./home3.png"]; // Añade más imágenes según sea necesario
+  const images = ["./logo.png", "./home.png", "./home3.png"]; // Añade más imágenes según sea necesario
 
   const handleNextImage = () => {
     setCurrentImage((prevImage) => (prevImage + 1) % images.length);
